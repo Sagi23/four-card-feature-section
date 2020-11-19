@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+:root {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.first-grid {
+  width: 80%;
+  margin: 5em auto 0;
+  text-align: center;
+  #att {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 0;
+    color: hsl(234, 12%, 34%);
+  }
+  #head {
+    color: hsl(234, 12%, 34%);
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  #sub-head {
+    font-size: 1.2rem;
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 5em;
+  }
+}
+
+.second-grid {
+  width: 80%;
+  margin: 0 auto;
+  .card {
+    background-color: white;
+    padding: 1em 2em;
+    margin: 2em 0 2em;
+    box-shadow: 0 1em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    display: grid;
+    img {
+      justify-self: right;
+    }
+    h2 {
+      margin-bottom: 0;
+      color: hsl(234, 12%, 34%);
+    }
+    p {
+      color: hsl(229, 6%, 66%);
+    }
+    &1 {
+      border-top: 4px solid hsl(180, 62%, 55%);
+    }
+    &2 {
+      border-top: 4px solid hsl(0, 78%, 62%);
+    }
+    &3 {
+      border-top: 4px solid hsl(34, 97%, 64%);
+    }
+    &4 {
+      border-top: 4px solid hsl(212, 86%, 64%);
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .first-grid {
+    width: 34%;
+    #att {
+      font-size: 3rem;
+    }
+    #head {
+      font-size: 3rem;
+      margin-bottom: 0.3em;
+    }
+  }
+  .second-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 2.5em;
+    margin-top: -5.5em;
+    .card3 {
+      grid-row: 2/3;
+      grid-column: 2/3;
+      margin-top: -8em;
+      height: 175%;
+    }
+    .card1,
+    .card4 {
+      margin-top: 13em;
+    }
+    .card2 {
+      align-self: start;
+      margin-top: 4.5em;
+    }
+  }
+}

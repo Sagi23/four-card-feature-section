@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+:root {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background-color: #fafafa;
+}
+
+.first-grid {
+  width: 80%;
+  margin: 5em auto 0;
+  text-align: center;
+}
+
+.first-grid #att {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 0;
+  color: #4c4e61;
+}
+
+.first-grid #head {
+  color: #4c4e61;
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.first-grid #sub-head {
+  font-size: 1.2rem;
+  color: #a3a5ae;
+  margin-bottom: 5em;
+}
+
+.second-grid {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.second-grid .card {
+  background-color: white;
+  padding: 1em 2em;
+  margin: 2em 0 2em;
+  -webkit-box-shadow: 0 1em 1em rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1em 1em rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+  display: -ms-grid;
+  display: grid;
+}
+
+.second-grid .card img {
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+
+.second-grid .card h2 {
+  margin-bottom: 0;
+  color: #4c4e61;
+}
+
+.second-grid .card p {
+  color: #a3a5ae;
+}
+
+.second-grid .card1 {
+  border-top: 4px solid #45d3d3;
+}
+
+.second-grid .card2 {
+  border-top: 4px solid #ea5353;
+}
+
+.second-grid .card3 {
+  border-top: 4px solid #fcaf4a;
+}
+
+.second-grid .card4 {
+  border-top: 4px solid #549ef2;
+}
+
+@media (min-width: 1440px) {
+  .first-grid {
+    width: 34%;
+  }
+  .first-grid #att {
+    font-size: 3rem;
+  }
+  .first-grid #head {
+    font-size: 3rem;
+    margin-bottom: 0.3em;
+  }
+  .second-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 0 2.5em;
+    margin-top: -5.5em;
+  }
+  .second-grid .card3 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    margin-top: -8em;
+    height: 175%;
+  }
+  .second-grid .card1,
+  .second-grid .card4 {
+    margin-top: 13em;
+  }
+  .second-grid .card2 {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    margin-top: 4.5em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
